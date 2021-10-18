@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node name="/" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
+  <interface name="org.softcoredesign.properties.Test">
+    <method name="request">
+      <arg name="seq" type="i" direction="out"></arg>
+    </method>
+    <signal name="event">
+      <arg name="msg" type="s" direction="out"></arg>
+    </signal>
+    <property name="status" type="u" access="read"/>
+  </interface>
+</node>
